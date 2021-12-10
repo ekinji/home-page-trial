@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 6px;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    /*background:#7c6550;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+@media screen and (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+    html {
+        font-size: 7px;
+    }
+}
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+    html {
+        font-size: 8px;
+    }
+}
+@media screen and (min-width:992px) {
+    .container {
+        max-width: 960px;
+
+    }
+    html {
+        font-size: 9px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    html {
+        font-size: 10px;
+    }
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/*navbar*/
+nav {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #cc4400;
+    color: #1a0000;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    position: fixed;
+    z-index: 500;
+}
+
+#log {
+    color: #1a0000;
+    display: inline-block;
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding-left: 2.3rem;
+}
+
+#logo-box {
+    float: left;
+    padding-top: .5rem;
+}
+
+#logo-box .logo {
+    color: #1a0000;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+#nav-links {
+    float: right;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: .4rem;
+}
+
+#nav-links .nav-link {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a0000;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: .1rem;
+    transition: color .3s;
+}
+
+#nav-links .nav-link:hover {
+    color: #fff;
+}
+#nav-links .nav-icon {
+    display: none;
+}
+@media screen and (max-width: 992px) {
+
+    #logo-box {
+        float: none;
+        text-align: left;
+    }
+    #nav-links {
+        float: none;
+    }
+    #nav-links.responsive li:not(:first-child) {
+        display: none;
+    }
+    #nav-links .nav-link {
+        font-size: 2rem;
+        padding-left: 9rem;
+    }
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+    }
+    #nav-links .nav-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+        font-size: 3rem;
+    }
+}
+/*header*/
+header .bg-image {
+    background-image: url(img/la-la-land\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 65rem;
+    width: 100%;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+header {
+    position: relative;
+    color: #1a0900;
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 90px;
+}
+
+header .hed-col {
+    padding-top: 20rem;
+}
+
+header h1 {
+    font-size: 7.6rem;
+}
+
+header p {
+    font-size: 2.2rem;
+}
+
+.btn {
+    margin-top: 4rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1.8rem;
+    background-color: #cc4400;
+    border-color: #cc4400;
+    color: #fff;
+    margin-top: 4rem;
+    display: inline-block;
+    border: 1px solid transparent;
+    opacity: 0.7;
+    padding: 1.8rem 2.2rem;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc4400;
+    border-color: #cc4400;
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+
+}
